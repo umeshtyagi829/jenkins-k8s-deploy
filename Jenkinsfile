@@ -1,7 +1,6 @@
 pipeline {
   agent any 
     stages{
-
       stage('app1'){
        when{
         expression{
@@ -13,7 +12,6 @@ pipeline {
           }
         }
       }
-  
   post{
     success{
       echo "success done"
@@ -21,13 +19,9 @@ pipeline {
     failure{
       echo "fail"
       }
-    
     always{
-      echo "always"
-      
-  
-    }
-    }
-  
-  
+      echo "always"   
+  }
+  }
+ }
         
