@@ -9,14 +9,14 @@ pipeline {
           }
          }
         steps{
-          sh "kubectl apply -f deploy.yml --kubeconfig /admin.conf
+          sh "kubectl apply -f deploy.yml --kubeconfig /admin.conf"
           }
         }
       }
   
   post{
     success{
-      echo "success"
+      echo "success done"
       }
     failure{
       echo "fail"
@@ -27,5 +27,6 @@ pipeline {
       
   
     }
+    
   
         
