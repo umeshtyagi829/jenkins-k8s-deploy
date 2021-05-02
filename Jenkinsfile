@@ -3,7 +3,7 @@ pipeline {
     stages{
       stage('app1'){
         steps{
-          echo 'date"
+          echo "date"
           }
         }
       }
